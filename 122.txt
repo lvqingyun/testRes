@@ -1,0 +1,9 @@
+        public static System.Drawing.Image ByteToImage( byte[] bt)
+        {
+            MemoryStream ms = new MemoryStream(bt); //建立内存的流
+            System.Drawing.Image img = System.Drawing.Image.FromStream((Stream)ms); //把内存的流转换成图片格式
+            return img;
+            
+            
+            //   img.Save(fileName, System.Drawing.Imaging.ImageFormat.Jpeg);// 保存图片
+        }
